@@ -1,0 +1,7 @@
+python manage.py runserver
+py manage.py shell
+pip install pytest-django
+pip install python-dotenv
+pytest
+pip freeze > requirements.txt
+python -m venv envBlog
