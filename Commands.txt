@@ -1,10 +1,15 @@
+python -m venv envBlog
 python manage.py runserver
 py manage.py shell
-pip install pytest-django
-pip install python-dotenv
 pip freeze > requirements.txt
-python -m venv envBlog
 
 pytest  -> to test all the test file
 pytest --cov  -> to Check Where DO we need Tests to perform
 pytest --cov-report html --cov=./(the place where we need to store the web result) -> to generate web report
+
+
+// To create fake data using factory boy Faker (For More Watch Docs)
+
+    py manage.py shell
+    >>> from djblogger.blog.factory import PostFactory
+    >>> x = PostFactory.create_batch(100)
