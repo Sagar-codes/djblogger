@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
 
-      <a class="navbar-brand logo fs-5" href="#">OceanBlogs</a>
+      <a class="navbar-brand logo fs-5" href="/">OceanBlogs</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -11,10 +11,18 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
         </ul>
-        <form class="d-flex" role="search">
+        <!-- <div class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        </div> -->
+        <div class="input-group d-flex">
+          <input class="form-control py-2 rounded-pill mr-1 pr-5" type="search" value="search" id="example-search-input">
+          <span class="input-group-append">
+              <button class="btn rounded-pill border-0 ml-n5" type="button">
+                  <i class="fa fa-search"></i>
+              </button>
+          </span>
+      </div>
         <button class="btn btn-outline-success ms-5"> <a href="#" class="text-decoration-none text-dark">Login</a> </button>
       </div>
     </div>

@@ -67,7 +67,8 @@ TEMPLATES = [
             ],
             # adding global load template in templates so we dont have to load each and every global template
             "builtins":[
-                'djblogger.blog.templatetags.tag_cloud'
+                'djblogger.blog.templatetags.tag_cloud',
+                'djblogger.blog.templatetags.markdown_processing'
             ],
         },
     },
