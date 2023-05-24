@@ -5,5 +5,6 @@ from ..blog import views
 
 urlpatterns = [
     path('', HomeView.as_view(), name="home"),
-    path('<slug:post>', views.post_single, name="post_single")
+    path('<slug:post>', views.post_single, name="post_single"),
+    path('__debug__/', include('debug_toolbar.urls')),
 ]
